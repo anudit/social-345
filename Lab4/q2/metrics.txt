@@ -1,0 +1,4 @@
+Diameter: 3
+Radius: 2
+Average Path length: 1.9001081081081082
+Average Clustering Coefficient: 0.102
