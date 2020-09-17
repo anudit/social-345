@@ -1,0 +1,7 @@
+Diameter: 3
+Radius: 2
+Average Path length: 1.9001081081081082
+Average Clustering Coefficient: 0.102
+
+
+As indicated by the small-world concept, the whole world is associated through short chains of acquaintances.this gave rise to the concept of six degrees of separation, inferring that any two people are, probably, six handshakes away. Interpersonal organization examination is the comprehension of ideas and data on connections among collaborating units in a biological framework. In this examination the properties of the actors are analysed regarding the structures of connections among them. In general, the social connections between the nodes are essential. 
