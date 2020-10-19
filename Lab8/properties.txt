@@ -1,0 +1,8 @@
+(a)	Number of nodes (n) = 291
+(b)	Number of edges (m) = 279
+(c)	Number of triangles = 1
+(d)	Maximum degree of a node= 34
+(e)	Average degree = 0.959
+(g)	Diameter = 9
+(i)	Average Clustering coefficient = 0.003
+(k)	Average Path length = 3.9016351882367855
