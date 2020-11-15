@@ -1,0 +1,7 @@
+Number of Nodes = 202
+Number of Edges = 4658
+Average Degree = 23.059
+Diameter = 10
+Density = 0.115
+Average Path length = 3.1818868637265085
+Average Clustering Coefficient = 0.410
