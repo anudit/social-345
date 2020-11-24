@@ -148,6 +148,17 @@ class Graph:
         # print(len(gr))
         # print(gr)
 
+    def threenode(self):
+        print('Calculating Three Node Paths...')
+        shp = shortPaths(self.edgeList, 3)
+        x = [x for x in range(1, self.V+1)]
+        y = [0 for _ in range(self.V)]
+        for src, value in shp.items():
+            for dest, path in value.items():
+                if(len(path) == 3):
+                    y[src]+=1
+        return [x, y]
+
 
 def getData(name = ''):
     db = []
@@ -167,11 +178,11 @@ g = Graph(data)
 data_er = getErGraphEdges(g.V, 0.5)
 g_er = Graph(data_er)
 
-# # Load BA Graph
+# Load BA Graph
 data_ba = getBaGraphEdges(g.V, 10)
 g_ba = Graph(data_ba)
 
-
+'''
 print(g.countEdges())
 print(np.average(g.degreeList()))
 print(np.max(g.degreeList()))
@@ -246,3 +257,16 @@ print(g.assortativity())
 
 
 g.probDist()
+'''
+
+# Three Node Paths
+g_thp_data = g.threenode()
+g_er_thp_data = g_er.threenode()
+g_ba_thp_data = g_ba.threenode()
+plt.xlabel('Nodes')
+plt.ylabel('Count')
+plt.scatter(g_thp_data[0],g_thp_data[1], s=20, label=f"Dataset {DS_NAME}")
+plt.scatter(g_er_thp_data[0],g_er_thp_data[1], marker='x', s=20, label='Equivalent ER Model')
+plt.scatter(g_ba_thp_data[0],g_ba_thp_data[1], marker='*', s=20, label='Equivalent BA Model')
+plt.legend()
+plt.show()
